@@ -87,17 +87,19 @@ final_score = α * BM25 + β * SPLADE + γ * FAISS
 > 📣 Best metrics achieved with **BM25:1 — SPLADE:3 — FAISS:6** and no reranker.
 
 
-<br>Scores of models ran individually
+
 <p align="center">
+<br>Scores of models ran individually
   <img src="assets/recall.png" />
   <img src="assets/map.png" />
   <img src="assets/ndcg.png" />
 </p>
 
 
+<p align="center">
 <br>Scores of hybrid approach
 <img src="assets/hybrid.png"/>
-
+</p>
 ---
 
 ## ⓟ️ Excluded: Pyserini 
