@@ -1,4 +1,4 @@
-# 📄 Patent Retrieval Evaluation Report (WPI\_60K)
+# Patent Retrieval Evaluation Report (WPI\_60K)
 
 ## 🏗️ Evaluation Setup
 
@@ -86,20 +86,35 @@ final_score = α * BM25 + β * SPLADE + γ * FAISS
 
 > 📣 Best metrics achieved with **BM25:1 — SPLADE:3 — FAISS:6** and no reranker.
 
+> 
+>
+> ### 
 
+<p align="left">
+<h3>Individual runs
 
-<p align="center">
-<br>Scores of models ran individually
+</h3>
   <img src="assets/recall.png" />
   <img src="assets/map.png" />
   <img src="assets/ndcg.png" />
+
+
+​    
+​    
+<h3>
+Hybrid approach
+</h3> 
+
+</h3>
+<img src="assets/hybrid.png" />
 </p>
 
 
-<p align="center">
-<br>Scores of hybrid approach
-<img src="assets/hybrid.png"/>
-</p>
+
+> ### 
+
+
+
 ---
 
 ## ⓟ️ Excluded: Pyserini 
