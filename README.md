@@ -16,7 +16,7 @@ This project evaluates hybrid retrieval methods on the **WPI\_60K** patent colle
 
 ### 📖 Document Dictionary
 
-- The 63k patent documents were parsed from raw `.txt` files into structured `.json` using `BeautifulSoup` for XML/HTML extraction.
+- The 63K patent documents were parsed from raw `.txt` files into structured `.json` using `BeautifulSoup` for XML/HTML extraction.
 - A curated JSON document dictionary (`doc_dict.json`) was later built with fields:
 
 ```json
@@ -78,11 +78,11 @@ final_score = α * BM25 + β * SPLADE + γ * FAISS
 
 ## 📉 Weight Tuning Experiments
 
-| BM25 | SPLADE | FAISS | Reranker  | R\@100 | NDCG\@10   | MAP\@1000  |
-| ---- | ------ | ----- | --------- | ------ | ---------- | ---------- |
-| 3    | 4      | 3     | none      | 0.5528 | 0.3319     | 0.2828     |
-| 1    | 3      | 6     | none      | 0.5961 | **0.3750** | **0.3324** |
-| 3.3  | 3.3    | 3.3   | tinyBert  | 0.5219 | 0.3252     | 0.2770     |
+| BM25 | SPLADE | FAISS | Reranker | R\@100 | NDCG\@10   | MAP\@1000  |
+| ---- | ------ | ----- | -------- | ------ | ---------- | ---------- |
+| 3    | 4      | 3     | none     | 0.5528 | 0.3319     | 0.2828     |
+| 1    | 3      | 6     | none     | 0.5961 | **0.3750** | **0.3324** |
+| 3.3  | 3.3    | 3.3   | tinyBert | 0.5219 | 0.3252     | 0.2770     |
 
 > 📣 Best metrics achieved with **BM25:1 — SPLADE:3 — FAISS:6** and no reranker.
 
@@ -91,7 +91,7 @@ final_score = α * BM25 + β * SPLADE + γ * FAISS
 > ### 
 
 <p align="left">
-<h3>Individual runs
+<h3>🏃 Individual Runs
 
 </h3>
   <img src="assets/recall.png" />
@@ -102,7 +102,7 @@ final_score = α * BM25 + β * SPLADE + γ * FAISS
 ​    
 ​    
 <h3>
-Hybrid approach
+⚙️ Hybrid Approach
 </h3> 
 
 </h3>
@@ -134,7 +134,7 @@ This evaluation:
 
 - Built a clean, lemmatized document corpus
 - Implemented a hybrid search engine combining BM25, SPLADE, FAISS
-- Tuned weights to maximize recall and MAP
-- Evaluated 923 & 2542 TREC-style queries against 63k+ patents
+- Tuned weights to maximize Recall and MAP
+- Evaluated 923 & 2542 TREC-style queries against 63K+ patents
 - Demonstrated a flexible, CPU-compatible hybrid retrieval 
 
